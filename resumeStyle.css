@@ -1,0 +1,10 @@
+.resumeImg{
+    background-image: url('resumeImg.PNG');
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 1/1.1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

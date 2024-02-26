@@ -1,0 +1,86 @@
+/*---------------IMAGES----------------*/
+.expenseTrackerProjectImg{
+    background-image: url('expenseTrackerProjectImg.PNG');
+}
+
+.noteTakerProjectImg{
+    background-image: url('noteTakerProjectImg.PNG');
+    aspect-ratio: 3/1 !important;
+    margin-top: 20px;
+}
+
+.vowelCounterProjectImg{
+    background-image: url('vowelCounterProjectImg.PNG');
+    aspect-ratio: 4/1 !important;
+    margin: 30px 30px 0 0;
+}
+
+.loginPageProjectImg{
+    background-image: url('loginPageProjectImg.PNG');
+}
+
+.realtorProjectImg{
+    background-image: url('realtorProjectImg.PNG');
+}
+
+.fordProjectImg{
+    background-image: url('fordProjectImg.PNG');
+}
+
+.travelItineraryProjectImg{
+    background-image: url('travelItineraryProjectImg.PNG');
+}
+
+.webbsCafeProjectImg{
+    background-image: url('webbsCafeProjectImg.PNG');
+}
+
+.crackerBarrelQrCode{
+    background-image: url('crackerBarrelQrCode.png');
+}
+
+.carDetailingQrCode{
+    background-image: url('carDetailingQrCode.png');
+}
+/*---------------IMAGES----------------*/
+
+/*------------PROJECT IMAGES STYLING-------------*/
+.projectImgContainer{
+    border: 3px solid aliceblue;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 2/1;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.projectImg{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 2/1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.projectImgContainer:hover .projectImg{
+    transform: scale(1.1);
+}
+
+.projectImgContainer:hover{
+    border-color: rgb(0, 0, 90);
+}
+/*------------PROJECT IMAGES STYLING-------------*/
+
+.projectDescription{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px 30px 0 30px;
+}

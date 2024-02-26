@@ -1,0 +1,352 @@
+/*----------------INTERACTIVE CIRCLES----------------*/
+.circlesContainer{
+    display: flex;
+}
+
+.circlesContainerSide{
+    flex: 1;
+    position: relative;
+}
+
+.interactiveCircle{
+    background-image: url('interactiveCircle.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.circlesContainerRight{
+    transform: rotateY(180deg);
+}
+
+.interactiveCircleHitbox{
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.ic1{
+    margin-left: 5%;
+    margin-top: 1vh;
+}
+
+.ic2{
+    margin-left: 50%;
+    margin-top: 3vh;
+}
+
+.ic3{
+    margin-left: 15%;
+    margin-top: 10vh;
+}
+
+.ic4{
+    margin-left: 40%;
+    margin-top: 15vh;
+}
+
+.ic5{
+    margin-left: -15px;
+    margin-top: 20vh;
+}
+
+.ic6{
+    margin-left: 55%;
+    margin-top: 25vh;
+}
+
+.ic7{
+    margin-left: 20%;
+    margin-top: 30vh;
+}
+
+.ic8{
+    margin-left: -25px;
+    margin-top: 35vh;
+}
+
+.ic9{
+    margin-left: 43%;
+    margin-top: 40vh;
+}
+
+.ic10{
+    margin-left: 5%;
+    margin-top: 45vh;
+}
+
+.interactiveCircleHitbox:hover{
+    transform: rotate(360deg);
+}
+
+/*----------------INTERACTIVE CIRCLES----------------*/
+
+/*----------IMAGE---------*/
+.myImg{
+    background-color: grey;
+    background-repeat: none;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 1000px;
+    transition: height 0.3s ease, width 0.3s ease;
+    background-image: url('myImg.JPG');
+}
+
+.myImgText{
+    padding: 0px 50px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: font-size 0.3s ease;
+}
+/*----------IMAGE---------*/
+
+/*----------SKILLS---------*/
+.htmlLogo{
+    background-image: url('htmlLogo.JPG');
+}
+.cssLogo{
+    background-image: url('cssLogo.JPG');
+}
+.jsLogo{
+    background-image: url('jsLogo.JPG');
+}
+.wordLogo{
+    background-image: url('microsoftWordLogo.png');
+}
+.excelLogo{
+    background-image: url('microsoftExcelLogo.png');
+}
+.docsLogo{
+    background-image: url('docsLogo.PNG');
+}
+.sheetsLogo{
+    background-image: url('sheetsLogo.PNG');
+}
+.slidesLogo{
+    background-image: url('slidesLogo.PNG');
+}
+.drawingsLogo{
+    background-image: url('drawingsLogo.PNG');
+}
+
+.skillsExpand{
+    background-color: rgb(0, 0, 90);
+    font-weight: bolder;
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+    font-size: 3em;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsExpandText{
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.skillsExpand:hover .skillsExpandText{
+    color: aliceblue;
+}
+
+.webDevContentContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 50px;
+}
+
+.webDevLogo{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: none; 
+}
+
+.skillsText{
+    text-align: center;
+    margin-top: 300px;
+    position: absolute;
+    margin: 300px 20px 0 20px;
+}
+
+#microsoftSuitesContainer{
+    transition: margin-top 0.2s ease;
+}
+
+.microsofSuitesLogo{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: none;
+    opacity: 0;
+}
+
+.microsoftSuitesContentContainer{
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+#googleContainer{
+    transition: margin-top 0.2s ease;
+}
+
+.googleContentContainer{
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.googleLogo{
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0;
+    display: none;
+}
+
+.googleText{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    transition: margin-left 1s ease, margin-right 1s ease, font-size 1s ease, opacity 1s ease;
+    opacity: 0;
+    display: none;
+}
+/*----------SKILLS---------*/
+
+/*-----FORMATTING-----*/
+@media(width <= 650px){
+    .myImg{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(width <= 1000px){
+    .myImgText{
+        font-size: 1.1em;
+    }
+    .interactiveCircleHitbox{
+        opacity: 0;
+    }
+    .webDevContentContainer{
+        display: block;
+    }
+    .webDevLogo{
+        margin-bottom: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .microsoftSuitesContentContainer{
+        display: block;
+    }
+    .microsofSuitesLogo{
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(width <= 750px){
+    .googleLogo{
+        margin-bottom: 15px;
+    }
+    .googleContentContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+    .googleText{
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 1.1em;
+    }
+}
+
+@media(width <= 700px){
+    .googleContentContainer{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media(width <= 650px){
+    .googleContentContainer{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+}
+
+@media(width <= 600px){
+    .googleContentContainer{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media(width <= 580px){
+    .googleContentContainer{
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
+/*-----FORMATTING-----*/
+
+/*-----ANIMATION-----*/
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slide-In{
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideOut{
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+.slide-Out{
+    animation: slideOut 0.3s ease-out;
+}
+/*-----ANIMATION-----*/

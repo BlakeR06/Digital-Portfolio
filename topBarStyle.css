@@ -1,0 +1,78 @@
+.topBar{
+    background-color: rgb(168, 168, 168);
+    display: flex;
+    cursor: default;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topBarTitle{
+    transition: font-size 0.1s ease;
+}
+
+.topBarLeft{
+    padding: 10px;
+}
+
+.topBarRight{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.currentPage{
+    background-color: aliceblue;
+    border-bottom: 3px solid rgb(0, 0, 90) !important;
+}
+
+.topBarSymbolContainer{
+    height: 100%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 2px;
+    cursor: pointer;
+}
+
+.projectsButton {
+    transition: border-bottom 0.3s ease;
+    border-bottom: 3px solid rgba(0, 0, 90, 0);
+}
+
+.projectsButton:hover {
+    border-bottom: 3px solid rgba(0, 0, 90, 1);
+}
+
+.resumeButton {
+    transition: border-bottom 0.3s ease;
+    border-bottom: 3px solid rgba(0, 0, 90, 0);
+}
+
+.resumeButton:hover {
+    border-bottom: 3px solid rgba(0, 0, 90, 1);
+}
+
+.homeButton{
+    transition: border-bottom 0.3s ease;
+    border-bottom: 3px solid rgba(0, 0, 90, 0);
+}
+
+.homeButton:hover {
+    border-bottom: 3px solid rgba(0, 0, 90, 1);
+}
+
+/*-----FORMATTING-----*/
+@media(width <= 750px){
+    .topBarTitle{
+        font-size: 3em;
+    }
+}
+
+@media(width <= 620px){
+    .topBarTitle{
+        font-size: 1.9em;
+    }
+}
+/*-----FORMATTING-----*/

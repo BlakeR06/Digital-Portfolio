@@ -1,0 +1,73 @@
+/*-----BASIC INFO-----*/
+.cit{
+    padding-inline-start: 10px;
+    font-size: 2em;
+    transition: font-size 0.3s ease;
+}
+
+.contact{
+    display: flex;
+}
+
+.contactsymbol{
+    font-size: 3em;
+    transition: font-size 0.3s ease;
+}
+/*-----BASIC INFO-----*/
+
+/*-----QR CODES-----*/
+.textQrCode{
+    background-image: url('textQrCode.png');
+}
+.emailQrCode{
+    background-image: url('emailQrCode.png');
+}
+
+.qrCodeContainer{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1500px;
+    margin: 50px auto 0 auto;
+}
+
+.qrCode{
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.qrCodeText{
+    margin-top: 380px;
+}
+/*-----QR CODES-----*/
+
+/*-----FORMATTING-----*/
+@media(width <= 750px){
+    .contactsymbol{
+        font-size: 2.5em;
+    }
+    .cit{
+        font-size: 1.5em;
+    }
+    .qrCode{
+        width: 300px;
+        height: 300px;
+    }
+    .qrCodeText{
+        margin-top: 300px;
+    }
+}
+@media(width <= 620px){
+    .qrCode{
+        width: 250px;
+        height: 250px;
+    }
+    .qrCodeText{
+        margin-top: 250px;
+    }
+}
+/*-----FORMATTING-----*/
